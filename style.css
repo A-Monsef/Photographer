@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Cardo";
+    src: url(font/cardo/Cardo-Regular.ttf);
+}
+
+body{
+    background-color: black;
+}
+
+.navbar-nav .nav-item i:hover{
+    color: white !important;
+}
+
+h2{
+    margin: 0 0 10px 0;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Cardo";
+}
+h2 span{
+    position: relative;
+}
+h2 span::before{
+    content: "";
+    background-color: #198754;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.cards img{
+    transition: 0.5s;
+    
+}
+.cards{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.331) ;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+.overlay:hover{
+    opacity: 1;
+}
+.cards:hover img{
+    transform: scale(1.05);
+}
+.i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#link{
+    font-size: 30px;
+}
+#expand{
+    font-size: 20px;
+}
+
