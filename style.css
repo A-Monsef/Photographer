@@ -11,7 +11,13 @@
 body{
     background-color: black;
 }
-
+nav{
+    background-color: black !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 .navbar-nav .nav-item i:hover{
     color: white !important;
 }
@@ -75,4 +81,69 @@ h2 span::before{
 #expand{
     font-size: 20px;
 }
+.location{
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    background-color: #222425;
+}
+.minicontainer:hover .location{
+    background-color: #27a776;
+    transition: 0.5s;
+}
+.minicontainer:hover i{
+    transition: 0.5s;
+    color: white !important;
+}
+.btn{
+    padding: 15px 40px;
+}
+.form-control{
+    margin-top: 10px;
+    background-color: #222425;
+    border: none;
+}
+.footer{
+    border-top: 1px solid;
+    padding-top: 30px;
+}
+.contact, .about{
+    margin-top: 100px;
+}
+ul{
+    list-style: none;
+}
+.testimonials h4{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
 
+.card{
+    padding: 20px;
+    background-color: #222425;
+    text-align: center;
+    color: white;
+}
+.card i{
+    color: orange;
+}
+.test{
+    transform: scale(90%);
+    opacity: 60%;
+}
+.testimonials h4::after {
+    margin-left: 5px;
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background-color:#27a776;
+    vertical-align: middle;
+}
