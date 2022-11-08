@@ -147,3 +147,36 @@ ul{
     background-color:#27a776;
     vertical-align: middle;
 }
+
+.container4 .card{
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.container4 .card::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    left: 0;
+    background-color: #27a776;
+    position: absolute;
+    z-index: -1;
+    transition: .5s;
+}
+.container4 .card:hover::after{
+    top: 0;
+}
+.container4 .card:hover .iconservices{
+    background-color: white;
+}
+.container4 .card:hover .iconservices i{
+    color: #27a776 !important;
+}
+.iconservices{
+    width: 50px;
+    height: 50px;
+    background-color: #27a776;
+}
